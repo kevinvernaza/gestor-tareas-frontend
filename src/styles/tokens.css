@@ -1,0 +1,134 @@
+
+:root {
+  color-scheme: dark;
+
+  /* =====================================
+     COLORES PRINCIPALES
+  ===================================== */
+
+  --color-bg: #080809;
+  --color-bg-secondary: #0d0d10;
+
+  --color-surface: #111114;
+  --color-surface-hover: #19191e;
+  --color-surface-elevated: #202025;
+
+  --color-red: #e32636;
+  --color-red-bright: #ff3045;
+  --color-red-dark: #991b2b;
+
+  --color-red-soft: rgba(227, 38, 54, 0.12);
+  --color-red-glow: rgba(255, 48, 69, 0.35);
+
+  /* =====================================
+     TEXTOS
+  ===================================== */
+
+  --color-text: #f4f4f5;
+  --color-text-secondary: #b4b4bc;
+  --color-text-muted: #777780;
+
+  /* =====================================
+     BORDES
+  ===================================== */
+
+  --color-border: rgba(255, 255, 255, 0.09);
+  --color-border-hover: rgba(255, 255, 255, 0.16);
+  --color-border-red: rgba(255, 48, 69, 0.42);
+
+  /* =====================================
+     ESTADOS
+  ===================================== */
+
+  --color-success: #22c55e;
+  --color-success-soft: rgba(34, 197, 94, 0.13);
+
+  --color-warning: #f59e0b;
+  --color-warning-soft: rgba(245, 158, 11, 0.13);
+
+  --color-danger: #ff3045;
+  --color-danger-soft: rgba(255, 48, 69, 0.13);
+
+  --color-info: #60a5fa;
+  --color-info-soft: rgba(96, 165, 250, 0.13);
+
+  /* =====================================
+     TIPOGRAFÍA
+  ===================================== */
+
+  --font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 1.875rem;
+  --font-4xl: 2.5rem;
+
+  /* =====================================
+     ESPACIADOS
+  ===================================== */
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+
+  /* =====================================
+     BORDES REDONDEADOS
+  ===================================== */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  /* =====================================
+     SOMBRAS
+  ===================================== */
+
+  --shadow-sm:
+    0 2px 8px rgba(0, 0, 0, 0.25);
+
+  --shadow-md:
+    0 8px 24px rgba(0, 0, 0, 0.35);
+
+  --shadow-lg:
+    0 16px 45px rgba(0, 0, 0, 0.5);
+
+  --shadow-red:
+    0 0 18px rgba(255, 48, 69, 0.25);
+
+  --shadow-red-strong:
+    0 0 28px rgba(255, 48, 69, 0.45);
+
+  /* =====================================
+     TRANSICIONES
+  ===================================== */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* =====================================
+     DIMENSIONES DE LA APLICACIÓN
+  ===================================== */
+
+  --sidebar-width: 204px;
+  --topbar-height: 64px;
+
+  --content-max-width: 1600px;
+}

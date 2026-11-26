@@ -1,0 +1,179 @@
+
+/* =====================================
+   SUPERFICIES DE CRISTAL
+===================================== */
+
+.glass-panel {
+  background: rgba(17, 17, 20, 0.78);
+
+  border: 1px solid var(--color-border);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-md);
+}
+
+/* =====================================
+   ILUMINACIÓN ROJA
+===================================== */
+
+.red-glow {
+  box-shadow:
+    0 0 12px rgba(255, 48, 69, 0.18),
+    0 0 30px rgba(255, 48, 69, 0.10);
+}
+
+.red-glow-hover {
+  transition:
+    box-shadow var(--transition-normal),
+    border-color var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.red-glow-hover:hover {
+  border-color: var(--color-border-red);
+
+  box-shadow: var(--shadow-red);
+
+  transform: translateY(-2px);
+}
+
+/* =====================================
+   ACENTO ROJO
+===================================== */
+
+.red-accent-line {
+  position: relative;
+}
+
+.red-accent-line::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background: var(--color-red-bright);
+
+  box-shadow: var(--shadow-red);
+}
+
+/* =====================================
+   DEGRADADO ROJO
+===================================== */
+
+.text-red-gradient {
+  color: var(--color-red-bright);
+
+  background: linear-gradient(
+    110deg,
+    #ff3045,
+    #ff6574
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =====================================
+   PUNTOS DE ESTADO
+===================================== */
+
+.status-dot {
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+}
+
+.status-dot--red {
+  background: var(--color-red-bright);
+  box-shadow: 0 0 10px var(--color-red-glow);
+}
+
+.status-dot--green {
+  background: var(--color-success);
+}
+
+.status-dot--yellow {
+  background: var(--color-warning);
+}
+
+.status-dot--blue {
+  background: var(--color-info);
+}
+
+/* =====================================
+   ANIMACIÓN DE RESPLANDOR
+===================================== */
+
+@keyframes red-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 8px rgba(255, 48, 69, 0.18);
+  }
+
+  50% {
+    box-shadow:
+      0 0 20px rgba(255, 48, 69, 0.45);
+  }
+}
+
+.red-pulse {
+  animation: red-pulse 2.8s ease-in-out infinite;
+}
+
+/* =====================================
+   ANIMACIÓN DE GIRO
+===================================== */
+
+@keyframes slow-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.slow-rotate {
+  animation: slow-rotate 25s linear infinite;
+}
+
+/* =====================================
+   TRANSICIONES DE ELEMENTOS
+===================================== */
+
+.transition-standard {
+  transition:
+    all var(--transition-normal);
+}
+
+/* =====================================
+   RESPETO POR MOVIMIENTO REDUCIDO
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

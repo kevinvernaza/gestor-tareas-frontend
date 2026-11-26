@@ -1,0 +1,15 @@
+
+# Dependencias
+node_modules/
+
+# Archivos generados por Vite
+dist/
+.vite/
+
+# Variables de entorno
+.env
+.env.*
+
+# Configuración local
+.vscode/
+.DS_Store
